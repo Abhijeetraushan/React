@@ -1,3 +1,50 @@
-#parent{
-        color:red;
+.logo {
+        height: 150px;
+        width: 150px;
+}
+
+.header {
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid black;
+}
+
+.nav>ul {
+        display: flex;
+        margin: 10px;
+        padding: 20 20px;
+}
+
+.nav>ul>li {
+        padding: 10px;
+        margin: 10px;
+        list-style-type: none;
+        font-size: 24px;
+}
+
+.card {
+        width: 200px;
+        margin: 5 20px;
+        background-color: #d3d3d3;
+
+}
+
+.card:hover {
+        border: 1px solid black;
+        cursor: pointer;
+}
+
+.search {
+        border: 1px solid black;
+        margin: 1px;
+}
+
+img {
+        width: 190px;
+        margin: 5px;
+}
+
+.card-container {
+        display: flex;
+        flex-wrap: wrap;
 }
