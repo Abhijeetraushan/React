@@ -1,7 +1,20 @@
-const heading=React.createElement("div",{id:"parent"},
-React.createElement("div",{id:"child"},
-[React.createElement("h1",{id:"heading"},"how are you doing"),React.createElement("h2",{id:"parent"},"if you want to craete sibling elment than club them as an array")]))
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
-const root=ReactDOM.createRoot(document.getElementById("root"))
+// const heading=React.createElement("h1",{},"Namste React , this is rendered")
 
-root.render(heading)
+// const heading=<h1>Namaste mate, 
+// JSX is compiled by babel is not
+// </h1> 
+
+const Heading=()=>(<h1>Helllo this is abhijeet</h1>);
+
+const HeadingComponent=()=>(
+<div><h1>
+This is react functionl component
+</h1>
+<Heading/>
+</div>);
+
+root=ReactDOM.createRoot(document.getElementById("root"))
+root.render(<HeadingComponent/>);
